@@ -145,28 +145,6 @@ namespace phm
 
 			objects_.push_back(std::move(object));
 		}
-		{
-			std::shared_ptr<PhmModel> model = PhmModel::createModelFromFile(device_, "models/flat_vase.obj");
-
-			PhmObject object;
-			object.model = model;
-			object.transform.translation = { 0.8f, 0.0f, 0.0f };
-			object.transform.scale = glm::vec3(3);
-			//object.transform.rotation.x = 0.1f * glm::two_pi<float>();
-
-			objects_.push_back(std::move(object));
-		}
-		{
-			std::shared_ptr<PhmModel> model = PhmModel::createModelFromFile(device_, "models/quad.obj");
-
-			PhmObject object;
-			object.model = model;
-			object.transform.translation = { 0.0f, 0.0f, 0.0f };
-			object.transform.scale = glm::vec3{ 3.0f, 1.0f, 3.0f };
-			//object.transform.rotation.x = 0.1f * glm::two_pi<float>();
-
-			objects_.push_back(std::move(object));
-		}
 	}
 }
 

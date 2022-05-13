@@ -28,7 +28,7 @@ namespace phm
 		void run();
 
 	private:
-		PhmWindow window_{ WIDTH, HEIGHT, "3D" };
+		PhmWindow window_{ WIDTH, HEIGHT, "Collatz Conjecture" };
 		PhmDevice device_{ window_ };
 		PhmRenderer renderer_{ window_, device_ };
 

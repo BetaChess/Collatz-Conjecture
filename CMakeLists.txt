@@ -26,7 +26,7 @@ add_subdirectory ("vendor/glm")
 # Add source
 set(
     SOURCES
-    "3D.cpp" 
+    "main.cpp" 
     "phm_model.h" 
     "phm_model.cpp" 
     "phm_window.h" 
@@ -62,6 +62,8 @@ set(
 	"simple_render_system.cpp"
     "point_light_system.h"
 	"simple_render_system.h"
+    "collatz_tree.h"
+    "collatz_tree.cpp"
 )
 
 # Add the executable
